@@ -1849,6 +1849,7 @@
   </Manufacturer>
   <Manufacturer id="012D" name="Wilshine Holding"></Manufacturer>
   <Manufacturer id="017F" name="Wink">
+    <Product config="wink/wnk-dw1.xml"  id="0001" name="WNK-DW1 D/W Sensor" type="0100" />
     <Product config="wink/wnk-mot1.xml"  id="0001" name="WNK-MOT1 Motion Sensor" type="0101" />
     <Product config="wink/wnk-sir1p.xml"  id="0001" name="WNK-SIR1P Siren" type="0200" />
   </Manufacturer>

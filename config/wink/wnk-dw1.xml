@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Product Revision="1" xmlns="https://github.com/OpenZWave/open-zwave">
+  <MetaData>
+    <MetaDataItem name="OzwInfoPage">http://www.openzwave.com/device-database/017F:0001:0100</MetaDataItem>
+    <MetaDataItem name="ProductPic">images/wink/wnk-dw1.png</MetaDataItem>
+    <MetaDataItem id="0004" name="ZWProductPage" type="0002">https://products.z-wavealliance.org/products/2494/</MetaDataItem>
+    <MetaDataItem name="Description">The Wink Door/Window Sensor is a Z-Wave Plus battery-powered device that detects when a door, window, or cabinet is opened and closed in your home, helping you monitor activity around your home to keep your family safe. Works with exterior and interior doors, garage doors, patio doors, windows, cabinets, drawers, and other openings.
+
+When your sensor detects activity, your Wink Hub or other Z-Wave Plus certified hub can send an alert to your smartphone, set off an alarm or chime, or trigger an automation such as turning on your lights.
+
+The Wink Door/Window Sensor offers an extra-long z-wave wireless range of up to 150 feet, and requires a Wink Hub or other Z-Wave Plus certified hub for operation. The Wink Door/Window sensor comes with a CR14250 battery and has a three-year battery life, and will send an alert to your smartphone via the hub when the device has low battery. </MetaDataItem>
+    <MetaDataItem id="0004" name="FrequencyName" type="0002">U.S. / Canada / Mexico</MetaDataItem>
+    <MetaDataItem name="ProductSupport">https://www.wink.com/help/products/wink-doorwindow-sensor/</MetaDataItem>
+    <MetaDataItem id="0004" name="Identifier" type="0002">WNK-DW1</MetaDataItem>
+    <MetaDataItem name="Name">Wink D/W Sensor</MetaDataItem>
+    <MetaDataItem name="ProductPage">https://www.wink.com/products/wink-doorwindow-sensor/</MetaDataItem>
+    <ChangeLog>
+      <Entry author="EdwardFinn" date="29 July 2020" revision="1">Initial Metadata Import from Z-Wave Alliance Database - https://products.z-wavealliance.org/products/2494/xml</Entry>
+    </ChangeLog>
+  </MetaData>
+  <!-- Configuration Parameters -->
+  <CommandClass id="112">
+    <Value genre="config" index="1" instance="1" label="BASIC_SET Off Delay" max="65535" min="1" size="2" type="int" value="30">
+      <Help>This parameter sets the delay time from when the Door/Window Sensor sends the BASIC_SET command to Association Group 2 and when the BASIC_SET(0) is sent. It accepts a value up to 65535, in seconds.</Help>
+    </Value>
+    <Value genre="config" index="2" instance="1" label="BASIC_SET Level" max="255" min="0" size="1" type="short" value="99">
+      <Help>This parameter sets the value sent by the BASIC_SET command to Association Group 2 (for more information, see “Association Groups”.)</Help>
+    </Value>
+  </CommandClass>
+  <!-- Association Groups -->
+  <CommandClass id="133">
+    <Associations num_groups="4">
+      <Group index="1" label="Lifeline" max_associations="5"/>
+	  <Group index="2" label="Basic Set" max_associations="5"/>
+	  <Group index="3" label="Notification Report" max_associations="5"/>
+	  <Group index="4" label="Sensor Binary Report" max_associations="5"/>
+    </Associations>
+  </CommandClass>
+</Product>
