@@ -32,7 +32,7 @@ The Wink Door/Window Sensor offers an extra-long z-wave wireless range of up to 
   </MetaData>
   <!-- Configuration Parameters -->
   <CommandClass id="112">
-    <Value genre="config" index="1" instance="1" label="Basic Set Off Delay" max="65535" min="1" type="short" value="30">
+    <Value genre="config" index="1" instance="1" label="Basic Set Off Delay" max="65535" min="1" size="2" type="short" value="30">
       <Help>This parameter sets the delay time from when the Door/Window Sensor sends the BASIC_SET command to Association Group 2 and when the BASIC_SET(0) is sent. It accepts a value up to 65535, in seconds.</Help>
     </Value>
     <Value genre="config" index="2" instance="1" label="Basic Set Level" max="255" min="0" size="1" type="byte" value="99">
